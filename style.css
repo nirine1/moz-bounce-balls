@@ -1,0 +1,108 @@
+html, body {
+    margin: 0;
+}
+  
+html {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    height: 100%;
+}
+  
+body {
+    overflow: hidden;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+h1,
+h1 + p {
+    position: absolute;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    letter-spacing: -1px;
+    top: -4px;
+    right: 5px;
+    color: transparent;
+    text-shadow: 0 0 4px white;
+}
+
+h1 + p {
+    font-size: 1rem;
+    top: 40px;
+    right: 10px;
+    color: #aaa;
+}
+
+.no_cursor {
+    cursor: none !important;
+}
+
+.visually_hidden {
+    display: none !important;
+}
+
+/* --------------------------------------------------------------------------------------------------------------- */
+
+#home {
+    background-color: #f8f8f8;
+    box-shadow: 0 0 10px #aaa;
+    border-radius: 5px;
+    width: 30%;
+    height: 50%;
+}
+
+#home form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 20px;
+}
+
+#home form label {
+    font-size: 1.2rem;
+}
+
+#home form button {
+    cursor: pointer;
+    background-color: #0a0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    outline: 2px solid #0a0;
+    transition: all .25s;
+}
+
+#home form button:focus,
+#home form button:hover {
+    outline-offset: 2px;
+    outline-color: #0d0;
+    background-color: #0d0;
+}
+
+/* --------------------------------------------------------------------------------------------------------------- */
+
+#exit_button {
+    z-index: 99;
+    font-size: 2rem;
+    color: #f00;
+    transition: color .5s;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#exit_button:hover {
+    color: #a00;
+}
