@@ -1,5 +1,10 @@
+:root {
+    --primary-color: #e3e3e3;
+}
+
 html, body {
     margin: 0;
+    background-color: var(--primary-color);
 }
   
 html {
@@ -15,6 +20,7 @@ body {
     text-align: center;
     align-items: center;
     justify-content: center;
+    font-size: 16px;
 }
 
 h1,
@@ -39,6 +45,11 @@ h1 + p {
     color: #aaa;
 }
 
+h2 {
+    font-size: 19px;
+    margin: 0;
+}
+
 .no_cursor {
     cursor: none !important;
 }
@@ -50,44 +61,91 @@ h1 + p {
 /* --------------------------------------------------------------------------------------------------------------- */
 
 #home {
-    background-color: #f8f8f8;
+    background-color: var(--primary-color);
     box-shadow: 0 0 10px #aaa;
-    border-radius: 5px;
-    width: 30%;
-    height: 50%;
+    border-radius: 30px;
+    min-width: 300px;
+    height: 300px;
+    box-shadow: 16px 16px 32px #c8c8c8, -16px -16px 32px #fefefe;
+}
+
+#home,
+#home form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 #home form {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    gap: 20px;
+    gap: 30px;
 }
 
-#home form label {
-    font-size: 1.2rem;
+form .input_box {
+    position: relative;
 }
 
-#home form button {
+#balls_number::-webkit-outer-spin-button,
+#balls_number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#balls_number {
+  -moz-appearance: textfield;
+  background-color: var(--primary-color);
+  border: 2px solid #000;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  outline: none;
+  height: 30px;
+  font-size: .9rem;
+}
+
+#balls_number:focus,
+#balls_number:hover,
+#balls_number:not(:placeholder-shown) {
+    border-top-color: #000;
+    border-right-color: #000;
+}
+
+#balls_number:focus + .floating_label,
+#balls_number:hover + .floating_label,
+#balls_number:not(:placeholder-shown) + .floating_label {
+    transform: translate(45%, -7px) scale(.8);
+    background-color: #000;
+    color: #fff;
+    letter-spacing: 0;
+}
+
+.floating_label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: .8rem;
+    padding: 2px;
+    transform: translate(5px, 6px);
+    transition: all .5s;
+    z-index: 1;
+}
+
+.submit_button {
+    background-color: transparent;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: .8rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    transition: all .5s;
     cursor: pointer;
-    background-color: #0a0;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 1rem;
-    outline: 2px solid #0a0;
-    transition: all .25s;
 }
 
-#home form button:focus,
-#home form button:hover {
-    outline-offset: 2px;
-    outline-color: #0d0;
-    background-color: #0d0;
+.submit_button:hover {
+    background-color: #000;
+    color: #fff;
 }
 
 /* --------------------------------------------------------------------------------------------------------------- */
@@ -104,5 +162,5 @@ h1 + p {
 }
 
 #exit_button:hover {
-    color: #a00;
+    color: #a60808;
 }

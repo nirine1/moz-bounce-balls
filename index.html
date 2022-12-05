@@ -11,17 +11,21 @@
     <body>
         <i id="exit_button" class="fa-solid fa-xmark visually_hidden"></i>
         <div id="home">
-            <form action="" target="_self">
-                <label for="balls_number">Enter the number of balls: </label>
-                <input 
+            <form action="post" target="_self">
+                <h2>Bouncing Ball</h2>
+                <div class="input_box">
+                    <input 
                     type="number" 
-                    name="balls_number" 
-                    id="balls_number"
-                    min="1"
-                    max="30"
-                    required 
-                >
-                <button type="submit">Begin</button>
+                        name="balls_number" 
+                        id="balls_number"
+                        min="1"
+                        max="30"
+                        placeholder=""
+                        required 
+                    >
+                    <label for="balls_number" class="floating_label">Number of balls</label>
+                </div>
+                <button type="submit" class="submit_button">BEGIN</button>
             </form>
         </div>
         <div id="content" class="visually_hidden">
