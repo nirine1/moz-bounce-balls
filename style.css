@@ -94,7 +94,6 @@ form .input_box {
 }
 
 #balls_number {
-  -moz-appearance: textfield;
   background-color: var(--primary-color);
   border: 2px solid #000;
   border-top-color: transparent;
