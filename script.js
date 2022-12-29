@@ -32,7 +32,7 @@ function randomRGB() {
 /* --------------------------------------------------------------------------------------------------------------- */
 
 function Shape(x, y, velX, velY, exists) {
-    this.x = x;    
+    this.x = x;
     this.y = y;
     this.velX = velX;
     this.velY = velY;
@@ -86,7 +86,7 @@ EvilCircle.prototype.collisionDetect = function() {
             continue;
         }
     }
-}  
+}
 
 
 /* --------------------------------------------------------------------------------------------------------------- */
@@ -224,5 +224,3 @@ function handleSubmit(e) {
 
     loop();
 }
-
-// try to make a destroy animation.

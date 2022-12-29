@@ -6,12 +6,12 @@ html, body {
     margin: 0;
     background-color: var(--primary-color);
 }
-  
+
 html {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     height: 100%;
 }
-  
+
 body {
     overflow: hidden;
     height: inherit;
@@ -89,18 +89,18 @@ form .input_box {
 
 #balls_number::-webkit-outer-spin-button,
 #balls_number::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 #balls_number {
-  background-color: var(--primary-color);
-  border: 2px solid #000;
-  border-top-color: transparent;
-  border-right-color: transparent;
-  outline: none;
-  height: 30px;
-  font-size: .9rem;
+    background-color: var(--primary-color);
+    border: 2px solid #000;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    outline: none;
+    height: 30px;
+    font-size: .9rem;
 }
 
 #balls_number:focus,
